@@ -17,7 +17,6 @@ URL=${ARGUMENTS[0]}
 
 if [ -z "${RUBY_NAME}" ]; then
   RUBY_NAME=${URL##*/}
-  RUBY_NAME=${VERSION_NAME%%\?*}
 fi
 
 if [[ -f $DOWNLOAD_PATH/$RUBY_NAME ]]; then
